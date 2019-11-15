@@ -123,6 +123,87 @@ Creative/fast:
 	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/build
 .PHONY : Creative/fast
 
+src/Camera.o: src/Camera.cpp.o
+
+.PHONY : src/Camera.o
+
+# target to build an object file
+src/Camera.cpp.o:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Camera.cpp.o
+.PHONY : src/Camera.cpp.o
+
+src/Camera.i: src/Camera.cpp.i
+
+.PHONY : src/Camera.i
+
+# target to preprocess a source file
+src/Camera.cpp.i:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Camera.cpp.i
+.PHONY : src/Camera.cpp.i
+
+src/Camera.s: src/Camera.cpp.s
+
+.PHONY : src/Camera.s
+
+# target to generate assembly for a file
+src/Camera.cpp.s:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Camera.cpp.s
+.PHONY : src/Camera.cpp.s
+
+src/Map.o: src/Map.cpp.o
+
+.PHONY : src/Map.o
+
+# target to build an object file
+src/Map.cpp.o:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Map.cpp.o
+.PHONY : src/Map.cpp.o
+
+src/Map.i: src/Map.cpp.i
+
+.PHONY : src/Map.i
+
+# target to preprocess a source file
+src/Map.cpp.i:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Map.cpp.i
+.PHONY : src/Map.cpp.i
+
+src/Map.s: src/Map.cpp.s
+
+.PHONY : src/Map.s
+
+# target to generate assembly for a file
+src/Map.cpp.s:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Map.cpp.s
+.PHONY : src/Map.cpp.s
+
+src/Player.o: src/Player.cpp.o
+
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -159,6 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Creative"
 	@echo "... edit_cache"
+	@echo "... src/Camera.o"
+	@echo "... src/Camera.i"
+	@echo "... src/Camera.s"
+	@echo "... src/Map.o"
+	@echo "... src/Map.i"
+	@echo "... src/Map.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
