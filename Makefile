@@ -204,6 +204,60 @@ src/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/Space.o: src/Space.cpp.o
+
+.PHONY : src/Space.o
+
+# target to build an object file
+src/Space.cpp.o:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Space.cpp.o
+.PHONY : src/Space.cpp.o
+
+src/Space.i: src/Space.cpp.i
+
+.PHONY : src/Space.i
+
+# target to preprocess a source file
+src/Space.cpp.i:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Space.cpp.i
+.PHONY : src/Space.cpp.i
+
+src/Space.s: src/Space.cpp.s
+
+.PHONY : src/Space.s
+
+# target to generate assembly for a file
+src/Space.cpp.s:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/Space.cpp.s
+.PHONY : src/Space.cpp.s
+
+src/event/event_loop.o: src/event/event_loop.cpp.o
+
+.PHONY : src/event/event_loop.o
+
+# target to build an object file
+src/event/event_loop.cpp.o:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/event/event_loop.cpp.o
+.PHONY : src/event/event_loop.cpp.o
+
+src/event/event_loop.i: src/event/event_loop.cpp.i
+
+.PHONY : src/event/event_loop.i
+
+# target to preprocess a source file
+src/event/event_loop.cpp.i:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/event/event_loop.cpp.i
+.PHONY : src/event/event_loop.cpp.i
+
+src/event/event_loop.s: src/event/event_loop.cpp.s
+
+.PHONY : src/event/event_loop.s
+
+# target to generate assembly for a file
+src/event/event_loop.cpp.s:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/event/event_loop.cpp.s
+.PHONY : src/event/event_loop.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -231,6 +285,87 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/shapes/CenteredShape.o: src/shapes/CenteredShape.cpp.o
+
+.PHONY : src/shapes/CenteredShape.o
+
+# target to build an object file
+src/shapes/CenteredShape.cpp.o:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/shapes/CenteredShape.cpp.o
+.PHONY : src/shapes/CenteredShape.cpp.o
+
+src/shapes/CenteredShape.i: src/shapes/CenteredShape.cpp.i
+
+.PHONY : src/shapes/CenteredShape.i
+
+# target to preprocess a source file
+src/shapes/CenteredShape.cpp.i:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/shapes/CenteredShape.cpp.i
+.PHONY : src/shapes/CenteredShape.cpp.i
+
+src/shapes/CenteredShape.s: src/shapes/CenteredShape.cpp.s
+
+.PHONY : src/shapes/CenteredShape.s
+
+# target to generate assembly for a file
+src/shapes/CenteredShape.cpp.s:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/shapes/CenteredShape.cpp.s
+.PHONY : src/shapes/CenteredShape.cpp.s
+
+src/shapes/RectangleShape.o: src/shapes/RectangleShape.cpp.o
+
+.PHONY : src/shapes/RectangleShape.o
+
+# target to build an object file
+src/shapes/RectangleShape.cpp.o:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/shapes/RectangleShape.cpp.o
+.PHONY : src/shapes/RectangleShape.cpp.o
+
+src/shapes/RectangleShape.i: src/shapes/RectangleShape.cpp.i
+
+.PHONY : src/shapes/RectangleShape.i
+
+# target to preprocess a source file
+src/shapes/RectangleShape.cpp.i:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/shapes/RectangleShape.cpp.i
+.PHONY : src/shapes/RectangleShape.cpp.i
+
+src/shapes/RectangleShape.s: src/shapes/RectangleShape.cpp.s
+
+.PHONY : src/shapes/RectangleShape.s
+
+# target to generate assembly for a file
+src/shapes/RectangleShape.cpp.s:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/shapes/RectangleShape.cpp.s
+.PHONY : src/shapes/RectangleShape.cpp.s
+
+src/shapes/Shape.o: src/shapes/Shape.cpp.o
+
+.PHONY : src/shapes/Shape.o
+
+# target to build an object file
+src/shapes/Shape.cpp.o:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/shapes/Shape.cpp.o
+.PHONY : src/shapes/Shape.cpp.o
+
+src/shapes/Shape.i: src/shapes/Shape.cpp.i
+
+.PHONY : src/shapes/Shape.i
+
+# target to preprocess a source file
+src/shapes/Shape.cpp.i:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/shapes/Shape.cpp.i
+.PHONY : src/shapes/Shape.cpp.i
+
+src/shapes/Shape.s: src/shapes/Shape.cpp.s
+
+.PHONY : src/shapes/Shape.s
+
+# target to generate assembly for a file
+src/shapes/Shape.cpp.s:
+	$(MAKE) -f CMakeFiles/Creative.dir/build.make CMakeFiles/Creative.dir/src/shapes/Shape.cpp.s
+.PHONY : src/shapes/Shape.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,9 +384,24 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/Space.o"
+	@echo "... src/Space.i"
+	@echo "... src/Space.s"
+	@echo "... src/event/event_loop.o"
+	@echo "... src/event/event_loop.i"
+	@echo "... src/event/event_loop.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/shapes/CenteredShape.o"
+	@echo "... src/shapes/CenteredShape.i"
+	@echo "... src/shapes/CenteredShape.s"
+	@echo "... src/shapes/RectangleShape.o"
+	@echo "... src/shapes/RectangleShape.i"
+	@echo "... src/shapes/RectangleShape.s"
+	@echo "... src/shapes/Shape.o"
+	@echo "... src/shapes/Shape.i"
+	@echo "... src/shapes/Shape.s"
 .PHONY : help
 
 

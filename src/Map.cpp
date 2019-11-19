@@ -18,7 +18,6 @@ Map::Map(const sf::Rect<int> &rect,
 
 const Map	&Map::drawHitboxes(sf::RenderWindow *window) const
 {
-	m_player.drawHitbox(window, m_camera);
 	return (*this);
 }
 
@@ -35,7 +34,7 @@ Map		&Map::moveCamera(int dx, int dy)
 
 Map		&Map::movePlayer(int dx, int dy)
 {
-	m_player.move(dx, dy);
+	// m_player.move(dx, dy);
 	return (*this);
 }
 

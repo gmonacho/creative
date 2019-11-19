@@ -7,15 +7,17 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
 # find_package(SDL2 REQUIRED)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include ${CMAKE_CURRENT_SOURCE_DIR}/include/shapes)
 
-add_executable(${PROJECT_NAME} include/Camera.hpp
-include/Map.hpp
-include/Player.hpp
+add_executable(${PROJECT_NAME} src/event/event_loop.cpp
+src/shapes/CenteredShape.cpp
+src/shapes/RectangleShape.cpp
+src/shapes/Shape.cpp
 src/Camera.cpp
 src/main.cpp
 src/Map.cpp
-src/Player.cpp)
+src/Player.cpp
+src/Space.cpp)
 
 set(LIBRARIES -lsfml-graphics -lsfml-window -lsfml-system)
 
