@@ -21,6 +21,7 @@ RectangleShape	&RectangleShape::drawBox(sf::RenderWindow *window,
 {
 	sf::RectangleShape	rect{static_cast<sf::Vector2f>(m_size)};
 
+	rect.setPosition(static_cast<sf::Vector2f>(CenteredShape::getPosition()));
 	rect.setOutlineThickness(1);
 	rect.setFillColor(sf::Color{0, 0, 0, 0});
 	rect.setOutlineColor(RectangleShape::getColor());
@@ -33,7 +34,37 @@ const sf::Vector2i	&RectangleShape::getSize() const
 	return (m_size);
 }
 
-RectangleShape			&RectangleShape::setSize(const sf::Vector2i &size)
+bool	RectangleShape::collideRect(const RectangleShape &rect)
+{
+	return (rect.getSFMLRect().intersects(rect.getSFMLRect()));
+}
+
+int	RectangleShape::getLeft() const
+{
+	return (CenteredShape::getPosition().x - RectangleShape::getSize().x / 2);
+}
+
+int	RectangleShape::getRight() const
+{
+	return (CenteredShape::getPosition().x + RectangleShape::getSize().x / 2);
+}
+
+int	RectangleShape::getTop() const
+{
+	return (CenteredShape::getPosition().y - RectangleShape::getSize().y / 2);
+}
+
+int	RectangleShape::getBot() const
+{
+	return (CenteredShape::getPosition().y + RectangleShape::getSize().y / 2);
+}
+
+sf::Rect<int>	RectangleShape::getSFMLRect() const
+{
+	return (sf::Rect{getLeft(), getTop(), getSize().x, getSize().y});
+}
+
+RectangleShape		&RectangleShape::setSize(const sf::Vector2i &size)
 {
 	m_size = size;
 	return (*this);
@@ -48,5 +79,12 @@ RectangleShape			&RectangleShape::setW(int w)
 RectangleShape			&RectangleShape::setH(int h)
 {
 	m_size.y = h;
+	return (*this);
+}
+
+RectangleShape			&RectangleShape::update()
+{
+	CenteredShape::addToPosition(Shape::getVelocity());
+	Shape::setVelocity(sf::Vector2i{0, 0});
 	return (*this);
 }

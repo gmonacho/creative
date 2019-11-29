@@ -20,7 +20,7 @@ public:
 	~Map() = default;
 
 	// Map					&drawEntities() const;
-	const Map			&drawHitboxes(sf::RenderWindow *window) const;
+	Map					&drawHitboxes(sf::RenderWindow *window);
 
 	const sf::Rect<int>	&getRect() const;
 
@@ -29,6 +29,8 @@ public:
 
 	Map					&setCameraPosition(int x, int y);
 	Map 				&setCameraZoom(float zoom);
+
+	Map					&updateEntities();
 };
 
 #endif	//	MAP_HPP_

@@ -1,4 +1,5 @@
 #include "CenteredShape.hpp"
+#include "RectangleShape.hpp"
 
 CenteredShape::CenteredShape()
 {
@@ -18,16 +19,28 @@ CenteredShape::CenteredShape(const sf::Vector2i &position, const sf::Color &colo
 	Shape::setColor(color);
 }
 
-CenteredShape	&CenteredShape::drawBox(sf::RenderWindow *window,
-										const Camera &camera)
+CenteredShape			&CenteredShape::move(int dx,  int dy)
 {
-	sf::CircleShape	circle{1};
+	Shape::setVelocity(sf::Vector2i{dx, dy});
+	return (*this);
+}
 
-	circle.setOutlineThickness(1);
-	circle.setFillColor(sf::Color{0, 0, 0, 0});
-	circle.setOutlineColor(Shape::getColor());
-	circle.setPosition(static_cast<sf::Vector2f>(m_position));
-	window->draw(circle);
+CenteredShape			&CenteredShape::move(const sf::Vector2i &v)
+{
+	Shape::setVelocity(v);
+	return (*this);
+}
+
+CenteredShape			&CenteredShape::addToPosition(int dx, int dy)
+{
+	m_position.x += dx;
+	m_position.y += dy;
+	return (*this);
+}
+
+CenteredShape			&CenteredShape::addToPosition(const sf::Vector2i &v)
+{
+	m_position += v;
 	return (*this);
 }
 

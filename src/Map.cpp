@@ -16,8 +16,9 @@ Map::Map(const sf::Rect<int> &rect,
 // }
 
 
-const Map	&Map::drawHitboxes(sf::RenderWindow *window) const
+Map		&Map::drawHitboxes(sf::RenderWindow *window)
 {
+	m_player.drawBox(window, m_camera);
 	return (*this);
 }
 
@@ -34,7 +35,7 @@ Map		&Map::moveCamera(int dx, int dy)
 
 Map		&Map::movePlayer(int dx, int dy)
 {
-	// m_player.move(dx, dy);
+	m_player.move(dx, dy);
 	return (*this);
 }
 
@@ -47,5 +48,11 @@ Map		&Map::setCameraPosition(int x, int y)
 Map 	&Map::setCameraZoom(float zoom)
 {
 	m_camera.setZoom(zoom);
+	return (*this);
+}
+
+Map		&Map::updateEntities()
+{
+	m_player.update();
 	return (*this);
 }
